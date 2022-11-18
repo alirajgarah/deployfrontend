@@ -74,7 +74,7 @@ methods: {
       try {
         this.error = null; // if the error is null and loading of map is right
         this.loading = true;
-        const url = import.meta.env.VITE_ROOT_API + '/eventData/last2months';
+        const url = 'https://cis4339project7.herokuapp.com/' + '/eventData/last2months';
         const response = await axios.get(url); //import from eventdata/last2months route in backend
         //"re-organizing" - mapping json from the response
         this.allData = response.data; //puts into allData variable
